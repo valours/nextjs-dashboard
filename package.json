@@ -1,6 +1,8 @@
 {
   "private": true,
   "scripts": {
+    "db:build": "docker build -t custom-postgres .",
+    "db:run": "docker run -d -p 5432:5432 --name custom-postgres custom-postgres",
     "build": "next build",
     "dev": "next dev",
     "start": "next start"
